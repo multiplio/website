@@ -1,2 +1,7 @@
 FROM nginx:alpine
-COPY ./build/ /usr/share/nginx/html
+
+# nginx config
+COPY ./default.conf /etc/nginx/conf.d/default.conf
+
+# site contents
+COPY ./build/ /usr/share/nginx/html/
