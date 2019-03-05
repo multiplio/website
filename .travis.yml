@@ -29,7 +29,7 @@ before_deploy:
   - source /home/travis/google-cloud-sdk/path.bash.inc
   - gcloud --quiet version
   - gcloud --quiet components update
-  - git clone https://github.com/multipl/MANAGE
+  - git clone https://github.com/multiplio/MANAGE
 
 deploy:
   - provider: script
@@ -39,5 +39,5 @@ deploy:
       branch: master
 
 notifications:
-	slack:
-		secure: "ahgglm85Spewx9Jqlf0C7yCrUmGzGtTRZm4yqcj8yF4XOuvcf3u6a0ehKO+CilnmGHPPOQFTe86UgZk3u+0sYHk+nPJ4vtCJDTmge1t+yH4VnKSSG4tF7okVe6H1neR3s03wFJh8N6aMs60cFfvQvzmj3P+PWr8K0+TvrGn6uRPODFjovimKm6VyswmPMbzDw1wZwBQsYVsU4B5imIpFyg0cL+2OyGGpytRlDDSM0RA4yU4QA+dX9aWou0RL8PpgdLawqzQ7Le6Kz19vTEWzO1mciriOlXn0P62pf8/U/fgWJMMWh7hk1HKltYsGSE4VFTR3eiEvLdCypWDyJcFICP2F+P0SsKIu4WdG2nKfh5vG6k0+mD2h6r8au/1S832RKybJcQofNK8zAO5X45Pr102Y9xjG9RiZ79QmQEUsOAG2d/c1oLL0PnpxD9MzdJxF2CvOegYuiYw91KwtXDpnN8I0Cuyr7z/Lh/uuJVfgtyvKYK2wMDPmIGN1Pz5fMDkJ5u+E0HRWWSBmMollA2N4VrQz+KE//fb2T9rFOtiLBPamDXAs5PH2WWZvqdV+HJM2CLxmUJyWWmmX0O+5h2MPRrkWpW2u/t8WO98WleuJi4MdPaOoCNoq6MAnORnGNpeAP7QEdKY6Xrrp5eYscIz0oJG4H2IaSDZZCeND0JfS81o="
+  slack:
+    secure: "ahgglm85Spewx9Jqlf0C7yCrUmGzGtTRZm4yqcj8yF4XOuvcf3u6a0ehKO+CilnmGHPPOQFTe86UgZk3u+0sYHk+nPJ4vtCJDTmge1t+yH4VnKSSG4tF7okVe6H1neR3s03wFJh8N6aMs60cFfvQvzmj3P+PWr8K0+TvrGn6uRPODFjovimKm6VyswmPMbzDw1wZwBQsYVsU4B5imIpFyg0cL+2OyGGpytRlDDSM0RA4yU4QA+dX9aWou0RL8PpgdLawqzQ7Le6Kz19vTEWzO1mciriOlXn0P62pf8/U/fgWJMMWh7hk1HKltYsGSE4VFTR3eiEvLdCypWDyJcFICP2F+P0SsKIu4WdG2nKfh5vG6k0+mD2h6r8au/1S832RKybJcQofNK8zAO5X45Pr102Y9xjG9RiZ79QmQEUsOAG2d/c1oLL0PnpxD9MzdJxF2CvOegYuiYw91KwtXDpnN8I0Cuyr7z/Lh/uuJVfgtyvKYK2wMDPmIGN1Pz5fMDkJ5u+E0HRWWSBmMollA2N4VrQz+KE//fb2T9rFOtiLBPamDXAs5PH2WWZvqdV+HJM2CLxmUJyWWmmX0O+5h2MPRrkWpW2u/t8WO98WleuJi4MdPaOoCNoq6MAnORnGNpeAP7QEdKY6Xrrp5eYscIz0oJG4H2IaSDZZCeND0JfS81o="
