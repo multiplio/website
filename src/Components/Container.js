@@ -34,7 +34,6 @@ const styles = StyleSheet.create({
     display: 'flex',
     'flex-direction': 'column',
     'justify-content': 'space-between',
-    'text-align': 'center',
   },
 })
 
