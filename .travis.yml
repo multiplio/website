@@ -30,6 +30,7 @@ before_deploy:
   - gcloud --quiet version
   - gcloud --quiet components update
   - git clone https://github.com/multiplio/MANAGE
+  - ./MANAGE/gcloud/auth.sh
 
 deploy:
   - provider: script
@@ -37,6 +38,11 @@ deploy:
     skip_cleanup: true
     on:
       branch: master
+  - provider: script
+    script: ./MANAGE/gcloud/push-tag.sh
+    skip_cleanup: true
+    on:
+      tags: true
 
 notifications:
   slack:
