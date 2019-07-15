@@ -7,6 +7,7 @@ export default class TermsOfUse extends Component {
   componentDidMount () {
     document.title = 'multipl - Terms of Use'
   }
+
   render () {
     return (
       <Container>

@@ -9,6 +9,7 @@ class Home extends Component {
   componentDidMount () {
     document.title = 'multipl'
   }
+
   render () {
     return (
       <Container>
