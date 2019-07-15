@@ -7,6 +7,7 @@ export default class PrivacyPolicy extends Component {
   componentDidMount () {
     document.title = 'multipl - Privacy'
   }
+
   render () {
     return (
       <Container>
