@@ -28,7 +28,7 @@ export default Container
 const styles = StyleSheet.create({
   container: {
     backgroundColor: pallete.background,
-    'width': '100%',
+    width: '100%',
     'min-height': '100%',
     margin: '0 auto',
     display: 'flex',
