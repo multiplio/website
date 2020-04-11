@@ -18,8 +18,7 @@ services:
   - docker
 
 before_script:
-  - yarn
-  - yarn lint
+  - npm install
 
 script:
   - make
