@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { StyleSheet, css } from 'aphrodite'
 
-import Container from '../Components/Container'
+import Container from '../components/Container'
 
 export default class TermsOfUse extends Component {
   componentDidMount () {
