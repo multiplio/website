@@ -5,10 +5,10 @@ import { Router } from 'components/Router'
 
 import './app.css'
 
-// Views
-import Home from './Views/Home'
-import PP from './Views/PrivacyPolicy'
-import TOS from './Views/TermsOfUse'
+// pages
+import Home from './pages/Home'
+import PP from './pages/PrivacyPolicy'
+import TOS from './pages/TermsOfUse'
 
 // Any routes that start with 'dynamic' will be treated as non-static routes
 addPrefetchExcludes(['dynamic'])
