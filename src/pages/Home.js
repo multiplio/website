@@ -3,7 +3,7 @@ import { StyleSheet, css } from 'aphrodite'
 
 import pallete from '../Styles/pallete'
 
-import Container from '../Components/Container'
+import Container from '../components/Container'
 
 class Home extends Component {
   componentDidMount () {
