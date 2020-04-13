@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from './Router'
-import { StyleSheet, css } from 'aphrodite'
+import { StyleSheet, css } from 'aphrodite-jss'
 
 import palette from '../styles/palette'
 
