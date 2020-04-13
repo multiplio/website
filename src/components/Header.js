@@ -3,7 +3,7 @@ import { Link } from './Router'
 import { StyleSheet, css } from 'aphrodite'
 
 import palette from '../styles/palette'
-import logo from '../Assets/multipl-logo-transparent.svg'
+import logo from '../assets/multipl-logo-transparent.svg'
 
 export default class Header extends Component {
   render () {
