@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from './Router'
 import { StyleSheet, css } from 'aphrodite'
 
-import pallete from '../Styles/pallete'
+import palette from '../styles/palette'
 import logo from '../Assets/multipl-logo-transparent.svg'
 
 export default class Header extends Component {
@@ -24,7 +24,7 @@ export default class Header extends Component {
 
 const styles = StyleSheet.create({
   header: {
-    backgroundColor: pallete.background,
+    backgroundColor: palette.background,
     height: '10rem',
     display: 'flex',
     'justify-content': 'space-around',

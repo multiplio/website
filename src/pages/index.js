@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, css } from 'aphrodite'
 
-import pallete from '../Styles/pallete'
+import palette from '../styles/palette'
 
 import Container from '../components/Container'
 
@@ -23,7 +23,7 @@ export default () => (
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: pallete.background,
+    backgroundColor: palette.background,
     height: '100%',
     width: '100%',
   },
