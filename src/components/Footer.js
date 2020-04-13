@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from './Router'
 import { StyleSheet, css } from 'aphrodite'
 
 import pallete from '../Styles/pallete'
