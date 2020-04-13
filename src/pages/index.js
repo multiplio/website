@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, css } from 'aphrodite'
+import { StyleSheet, css } from 'aphrodite-jss'
 
 import palette from '../styles/palette'
 
