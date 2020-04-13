@@ -1,34 +1,25 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { StyleSheet, css } from 'aphrodite'
 
 import pallete from '../Styles/pallete'
 
 import Container from '../components/Container'
 
-class Home extends Component {
-  componentDidMount () {
-    document.title = 'multipl'
-  }
+export default () => (
+  <Container>
 
-  render () {
-    return (
-      <Container>
+    <div className={css(styles.container)}>
 
-        <div className={css(styles.container)}>
+      <div className={css(styles.view)}>
+        <section>
+          <h1>Building the future today.</h1>
+        </section>
+      </div>
 
-          <div className={css(styles.view)}>
-            <section>
-              <h1>Building the future today.</h1>
-            </section>
-          </div>
+    </div>
 
-        </div>
-
-      </Container>
-    )
-  }
-}
-export default Home
+  </Container>
+)
 
 const styles = StyleSheet.create({
   container: {
@@ -46,4 +37,3 @@ const styles = StyleSheet.create({
     'text-align': 'center',
   },
 })
-
