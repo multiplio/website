@@ -2,7 +2,6 @@ import path from 'path'
 
 export default {
   plugins: [
-    'react-static-plugin-jss',
     [
       require.resolve('react-static-plugin-source-filesystem'),
       {
@@ -12,4 +11,5 @@ export default {
     require.resolve('react-static-plugin-reach-router'),
     require.resolve('react-static-plugin-sitemap'),
   ],
+  extractCssChunks: true,
 }
