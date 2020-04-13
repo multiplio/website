@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom'
 import { AppContainer } from 'react-hot-loader'
 import registerServiceWorker from './registerServiceWorker'
 
-import './index.css'
-
 // Your top level component
 import App from './App'
 
