@@ -1,27 +1,11 @@
 import React from 'react'
-import { StyleSheet, css } from 'aphrodite-jss'
+import { createUseStyles } from 'react-jss'
 
 import palette from '../styles/palette'
 
 import Container from '../components/Container'
 
-export default () => (
-  <Container>
-
-    <div className={css(styles.container)}>
-
-      <div className={css(styles.view)}>
-        <section>
-          <h1>Building the future today.</h1>
-        </section>
-      </div>
-
-    </div>
-
-  </Container>
-)
-
-const styles = StyleSheet.create({
+const useStyles = createUseStyles({
   container: {
     backgroundColor: palette.background,
     height: '100%',
@@ -37,3 +21,22 @@ const styles = StyleSheet.create({
     'text-align': 'center',
   },
 })
+
+export default () => {
+  const classes = useStyles()
+  return (
+    <Container>
+
+      <div className={ classes.container }>
+
+        <div className={ classes.view }>
+          <section>
+            <h1>Building the future today.</h1>
+          </section>
+        </div>
+
+      </div>
+
+    </Container>
+  )
+}

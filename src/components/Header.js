@@ -1,28 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Link } from './Router'
-import { StyleSheet, css } from 'aphrodite-jss'
+import { createUseStyles } from 'react-jss'
 
 import palette from '../styles/palette'
 import logo from '../assets/multipl-logo-transparent.svg'
 
-export default class Header extends Component {
-  render () {
-    return (
-      <div className={css(styles.header)}>
-
-        <div className={css(styles.logo)}>
-          <Link to="/">
-            <img alt="logo" className={css(styles['logo-image'])} src={logo} />
-          </Link>
-          <h1 className={css(styles.name)}>multipl</h1>
-        </div>
-
-      </div>
-    )
-  }
-}
-
-const styles = StyleSheet.create({
+const useStyles = createUseStyles({
   header: {
     backgroundColor: palette.background,
     height: '10rem',
@@ -46,3 +29,18 @@ const styles = StyleSheet.create({
   },
 })
 
+export default () => {
+  const classes = useStyles()
+  return (
+    <div className={classes.header}>
+
+      <div className={classes.logo}>
+        <Link to="/">
+          <img alt="logo" className={classes['logo-image']} src={logo} />
+        </Link>
+        <h1 className={classes.name}>multipl</h1>
+      </div>
+
+    </div>
+  )
+}

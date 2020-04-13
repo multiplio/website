@@ -1,25 +1,10 @@
 import React from 'react'
 import { Link } from './Router'
-import { StyleSheet, css } from 'aphrodite-jss'
+import { createUseStyles } from 'react-jss'
 
 import palette from '../styles/palette'
 
-const Footer = () => {
-  return (
-    <div className={css(styles.footer)}>
-
-      <section className={css(styles.view)}>
-        <span className={css(styles.item)}>Copyright ©2019 Multipl</span>
-        <Link className={css(styles.item)} to="/terms">Terms of Use</Link>
-        <Link className={css(styles.item)} to="/privacy">Privacy Policy</Link>
-      </section>
-
-    </div>
-  )
-}
-export default Footer
-
-const styles = StyleSheet.create({
+const useStyles = createUseStyles({
   footer: {
     backgroundColor: palette.background,
     height: '3rem',
@@ -35,3 +20,17 @@ const styles = StyleSheet.create({
   },
 })
 
+export default () => {
+  const classes = useStyles()
+  return (
+    <div className={classes.footer}>
+
+      <section className={classes.view}>
+        <span className={classes.item}>Copyright ©2019 Multipl</span>
+        <Link className={classes.item} to="/terms">Terms of Use</Link>
+        <Link className={classes.item} to="/privacy">Privacy Policy</Link>
+      </section>
+
+    </div>
+  )
+}
