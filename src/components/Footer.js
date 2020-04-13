@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from './Router'
 import { StyleSheet, css } from 'aphrodite'
 
-import pallete from '../Styles/pallete'
+import palette from '../styles/palette'
 
 const Footer = () => {
   return (
@@ -21,7 +21,7 @@ export default Footer
 
 const styles = StyleSheet.create({
   footer: {
-    backgroundColor: pallete.background,
+    backgroundColor: palette.background,
     height: '3rem',
     display: 'flex',
     'justify-content': 'space-around',

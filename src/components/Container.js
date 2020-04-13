@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StyleSheet, css } from 'aphrodite'
 
-import pallete from '../Styles/pallete'
+import palette from '../styles/palette'
 
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -27,7 +27,7 @@ export default Container
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: pallete.background,
+    backgroundColor: palette.background,
     width: '100%',
     'min-height': '100%',
     margin: '0 auto',
