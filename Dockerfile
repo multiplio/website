@@ -1,7 +1,4 @@
-FROM nginx:alpine
-
-# nginx config
-COPY ./default.conf /etc/nginx/conf.d/default.conf
+FROM docker.pkg.github.com/multiplio/docker-lighttpd-alpine/lighttpd-alpine:1.0.0
 
 # site contents
-COPY ./dist/ /usr/share/nginx/html/
+COPY ./dist/ /var/www/localhost/htdocs/
