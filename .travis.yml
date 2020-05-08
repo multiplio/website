@@ -19,6 +19,7 @@ services:
 
 before_script:
   - npm install
+  - echo $GITHUB_READ_PACKAGES | docker login https://docker.pkg.github.com -u WhoMeNope --password-stdin
 
 script:
   - make
